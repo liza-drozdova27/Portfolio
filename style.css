@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    /* зовнішній відступ */
+}
+html{
+    box-sizing: border-box;
+    /* Согласно спецификации CSS ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border) */
+}
+.container{
+    width: 100%;
+    /* ширина */
+    max-width: 1109px;
+    /* Устанавливает максимальную ширину элемента. */
+    margin:0 auto ;
+    /* зовнішній відступ */
+}
+.hero{
+    background-image:url("./img/Background.png");
+    /* колір картинки */
+    background-repeat: no-repeat;
+    /*пределяет, как будет повторяться фоновое изображение, установленное с помощью свойства background-image.  */
+    background-position: center center;
+    /* Задает начальное положение фонового изображения, установленного с помощью свойства background-image */
+    background-attachment: fixed;
+    /* Свойство background-attachment устанавливает, будет ли прокручиваться фоновое изображение вместе с содержимым элемента. */
+    background-size: cover;  
+    /* Масштабирует фоновое изображение согласно заданным размерам. */
+     height: 768px;
+     /* розмір */
+}
+.header{
+    display: flex;
+    /* Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе. */
+    justify-content: space-between;
+    /* Интерактивный пример ниже демонстрирует некоторые значения, используя Grid размещение. */
+    position:fixed;
+    /* Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице. */
+    top:0;
+    /* зверху */
+    margin:0px;
+    /* зовнішній відступ */
+    left:50%;
+    /* ліво */
+    transform: translate(-50%);
+    /* Трансформирует элемент, в частности, позволяет его масштабировать, вращать, сдвигать, наклонять, а также комбинировать виды трансформаций.*/
+    top:45px
+    /* вурх */
+}
+.header_nav-list{
+    list-style: none;
+    /* Универсальное свойство, позволяющее одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера. */
+    display: flex;
+    /* Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе. */
+    font-size: 18px;
+    /* розмір */
+    gap:60px;
+    /* Свойство gap CSS задаёт отступы (gutters (en-US)) между столбцами и строками, а не вдоль края контейнера сетки */
+    color:white;
+    /* колір */
+    
+}
+.hero_title {
+    height: 78px;
+    /* висота */
+    width: 694px;
+    /* ширина */
+    left: 165px;
+    /* ліво */
+    top: 267px;
+    /* верх */
+    border-radius: 0px;
+    /* Устанавливает радиус скругления уголков рамки */
+    font-family: Libre Franklin;
+    /* Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+    font-size: 64px;
+     /* розмір */
+    font-style: normal;
+    /* Определяет начертание шрифта — обычное, курсивное или наклонное. */
+    font-weight: 400;
+    /* станавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100. */
+    line-height: 78px;
+    /* Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта. */
+    letter-spacing: 0em;
+    /* пределяет интервал между символами в пределах элемента. */
+    text-align: left;
+    /* Определяет горизонтальное выравнивание текста в пределах элемента. */
+    padding-top: 267px;
+    /* внутрішній відступ з верху  */
+    margin-top: 0;
+    /* зовнішній відступ верху*/
+    margin-bottom: 26px;
+    /* зовнішній відступ низу*/
+    color: white;
+    /* колір */
+  }
+.hero_link {
+    height: 22px;
+     /* висота */
+    width: 110px;
+    /* ширина */
+    left: 165px;
+     /* ліво */
+    top: 506px;
+    /* верх */
+    border-radius: 0px;
+    /* Устанавливает радиус скругления уголков рамки */
+    font-family: Libre Franklin;
+     /* Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+    font-size: 18px;
+     /* розмір */
+    font-style: normal;
+     /* Определяет начертание шрифта — обычное, курсивное или наклонное. */
+    font-weight: 400;
+     /* станавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100. */
+    line-height: 22px;
+    /* Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта. */
+    letter-spacing: 0em;
+    /* пределяет интервал между символами в пределах элемента. */
+    text-align: left;
+     /* Определяет горизонтальное выравнивание текста в пределах элемента. */
+  }
+  .hero_subtitle {
+    height: 29px;
+     /* висота */
+    width: 333px;
+    /* ширина */
+    left: 165px;
+     /* ліво */
+    top: 371px;
+     /* верх */
+    border-radius: 0px;
+    /* Устанавливает радиус скругления уголков рамки */
+    font-family: Libre Franklin;
+     /* Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+    font-size: 24px;
+     /* розмір */
+    font-style: normal;
+     /* Определяет начертание шрифта — обычное, курсивное или наклонное. */
+    font-weight: 400;
+     /* станавливает насыщенность шрифта. Значение устанавливается от 100 до 900 с шагом 100. */
+    line-height: 29px;
+    /* Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта. */
+    letter-spacing: 0em;
+    /* пределяет интервал между символами в пределах элемента. */
+    text-align: left;
+     /* Определяет горизонтальное выравнивание текста в пределах элемента. */
+    margin-bottom: 106px;
+    /* зовнішній відступ низу */
+  }
+.about_text{
+    font-size: 24px;
+    /* розмір */
+}
+.title{
+    font-size:18px;
+     /* розмір */
+}
+.skills{
+    background-color: #FFFAF2;
+    /* колір */
+    padding-bottom: 145px;
+}
+.skills_summary{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.skills_title{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    margin: 0px;
+    flex-grow:1 ;
+    width: 152px;
+}
+.progres-bar{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 4;
+    height: 24px;
+    width: 250px;
+}
+.loaded{
+    background-color: #C66C49;
+    width: 80%;
+}
+.unloaded{
+    background-color: #F5D6AB;
+    width: 20%;
+}
+.skills_content{
+    display: flex;
+    justify-content: space-between;
+}
+.imges_container{
+    flex-grow: 1;
+}
+.skills_text{
+    flex-grow: 2;
+}
+
+.design{
+width: 45%;
+}
+.unloaded-design{
+    width: 55%;
+}
+.frontent{
+    width: 40%;
+}
+.unloaded-frontend{
+    width: 60%;
+}
+.portfolio-pictures{
+    background-image:url(./img/River.png) ;
+    width: 233px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.portfolio-text-title{
+    font-size: 18px;
+    line-height: 25px;
+    color:#333;
+    font-weight: 600;
+}
+.portfolio-description{
+    font-size: 18px;
+    line-height: 30px;
+    width: 350px;
+}
+.pornfolio-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pornfolio{
+    padding-bottom: 145px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link-list a {
+    font-size: 18px;
+    list-style: none;
+}
+.link-list{
+    list-style: none;
+}
+footer{
+    background: #FFFAF2;
+}
